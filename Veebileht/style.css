@@ -1,0 +1,450 @@
+*{
+    margin: 0;
+    font-family: "signika", sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --accent: #e3292a;
+    --orange: #feeadf;
+    --black: #1e1e1e;
+}
+
+body{
+    color: var(--black);
+}
+
+/* Navigatsioon */
+
+section{
+    min-width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+
+
+.hero-page{
+    background-image: url("img/hero-bg.png");
+    display: flex;
+    flex-direction: column;
+}
+
+nav{
+    background: transparent;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    color: white;
+}
+
+.logo{
+    color: var(--accent);
+    font-size: 64px;
+    line-height: 80px;
+    margin-left: 50px;
+    font-weight: 800;
+}
+
+nav div{
+    display: flex;
+    align-items: center;
+    gap: 39px;
+}
+
+nav ul {
+    float: none;
+    padding-left: 0px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0px 5px;
+}
+
+nav ul li a{
+    color: var(--black);
+    font-size: 24px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.3s ease-in all;
+}
+
+a:hover{
+    opacity: 70%;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: var(--black);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+.btn-1{
+    background-color: var(--black);
+    color: white;
+    border: none;
+    border-radius: 16px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    text-decoration: none;
+    width: 161px;
+    height: 48px;
+    font-size: 24px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.5s ease-in-out;
+}
+
+/* Hiiro kontent */
+
+.hero-container{
+    display: flex;
+    flex-direction: row;
+    padding: 0px 100px 0px 50px;
+    justify-content: space-between;
+    margin-top: 40px;
+    color: var(--black);
+}
+
+.headlines{
+    display: flex;
+    flex-direction: column;
+}
+
+.headlines h1{
+    width: 660px;
+    font-size: 64px;
+    font-weight: bold;
+
+}
+
+.headlines p{
+    width: 660px;
+    font-size: 36px;
+    opacity: 70%;
+    font-weight: 400;
+}
+
+.red{
+    color: var(--accent);
+}
+
+.btn-red{
+    background-color: var(--accent);
+    color: white;
+    width: 343px;
+    height: 68px;
+}
+
+.btn-transparent{
+    background-color: transparent;
+    border: solid var(--accent) 1px;
+    color: var(--accent);
+    font-size: 20px;
+    display: flex;
+    gap: 24px;
+}
+
+.btn-1:hover{
+    margin-left: 5px;
+    transition: all 0.5s;
+}
+
+.hero-img{
+    width: 650px;
+    height: 480px;
+    transition: all 0.5s;
+}
+
+.hero-img img{
+    width: 80%;
+    margin-left: 100px;
+    animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.features{
+    width: 954px;
+    height: 170px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: white;
+    align-self: center;
+    border-radius: 32px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    color: var(--black);
+}
+
+.feature{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-title{
+    display: flex;
+    gap: 10px;
+}
+
+
+.circle{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+}
+
+.features p{
+    opacity: 70%;
+}
+
+.features span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+ 
+.features span h1{
+    font-size: 64px;
+}
+
+
+
+/* Kohta/about */
+
+.about{
+    display: flex;
+    gap: 30px;
+    background-image: url("img/hiiro-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+.about-content{
+    margin-left: 50px;
+    margin-top: 80px;
+}
+
+.about-headline h1{
+    width: 597px;
+    font-size: 96px;
+}
+
+.about-headline p{
+    width: 648px;
+    font-size: 24px;
+    opacity: 80%;
+}
+
+.about-boxes{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 64px;
+}
+
+.about-box{
+    display: flex;
+    justify-content: center;
+    width: 648px;
+    height: 164px;
+    color: white;
+    align-items: center;
+    gap: 26px;
+    border-radius: 32px;
+    filter: drop-shadow(0px 5px 10px #29292992);
+    transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.about-box:hover{
+    transform: translateY(-10px);
+}
+
+.box-description{
+    display: flex;
+    flex-direction: column;
+}
+
+.box-description h4{
+    font-size: 24px;
+    display: inline;
+}
+
+.box-description span{
+    width: 504px;
+}
+
+.about-img{
+    width: 612px;
+    height: 408px;
+    background-color: var(--accent);
+    margin-top: 200px;
+}
+
+/* callout / tähelepanu juhtimine sisule */
+
+.callout{
+    height: 422px;
+    background-image: url(img/callout-bg.png);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 100px;
+}
+
+.callout h1{
+    width: 680px;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.callout p{
+    width: 805px;
+    font-size: 20px;
+}
+
+/* Menüü */
+
+.menu{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-title{
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-title h1{
+    font-size: 64px;
+
+}
+
+.menu-title i{
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.menu-items{
+    height: 744px;
+    width: 1320px;
+    display: flex;
+    gap: 24px;
+    margin-top: 24px;
+    margin-bottom: 50px;
+}
+
+.menu-column{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.menu-item{
+    border-radius: 32px;
+    border: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: drop-shadow(0px 5px 10px #29292992);
+    transition: all 0.5s ease-in-out;
+}
+
+.menu-item:hover{
+    /* liiguta menüü olevaid esemeid 4px paremale */
+    transform: translateX(4px);
+    filter: drop-shadow(0px 5px 12px #29292992);
+}
+
+.Pepperoni-vn{
+    background-image: url("img/PVN.png");
+    height: 1032px;
+    width: 688px;
+}
+
+.menu-item-title{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px 0px 20px;
+    background-color: white;
+    width: 349px;
+    height: 44px;
+    border-radius: 64px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.menu-items a{
+    text-decoration: none;
+    color: black;
+    transition: all 0.5s ease-in-out;
+}
+
+.Margherita{
+    width: 688px;
+    height: 528px;
+    background-image: url("img/margherita.png");
+}
+
+.BBQ{
+    width: 688px;
+    height: 516px;
+    background-image: url("img/BBQ.png");
+}
+
+.Supreme{
+    width: 688px;
+    height: 688px;
+    background-image: url("img/supreme.png");
+}
+
+.Hawaiian{
+    width: 688px;
+    height: 716px;
+    background-image: url("img/Hawaiian.png");
+}

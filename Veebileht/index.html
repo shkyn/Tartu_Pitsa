@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- lingid fontidele jne -->
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap" rel="stylesheet">
+
+    <title>Tartu Pitsa</title>
+</head>
+    <body>
+        <section class="hero-page">
+            <!-- navigatsioon -->
+            <nav>
+                <input type="checkbox" id="check">
+                <label class="logo">Tartu Pitsa</label>
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+
+                <ul>
+                    <li><a href="index.html" onclick="uncheckCheckbox()">Pealeht</a></li>
+                    <li><a href="index.html#about" onclick="uncheckCheckbox()">Kohta</a></li>
+                    <li><a href="menu.html" onclick="uncheckCheckbox()">Menüü</a></li>
+                    <li><a href="contact.html" onclick="uncheckCheckbox()">Kontakt</a></li>
+                </ul>
+                <a
+                href="contact.html"
+                class="btn-1 no-visibility"
+                style="margin-right: 60px;"
+                >
+                    <p>Osta Kohe</p>
+                </a>
+
+
+            </nav>
+
+            <!-- navigatsiooni lõpp -->
+
+            <!-- Hiiro kontent -->
+
+            <div class="hero-container fadeInOnLoad">
+                <div class="headlines">
+                    <h1>Maitske, Nautige, Mõnule: Tartu Pitsa Vabastatud Maagia!</h1>
+                    <p>Põgene Tavalistest Maitsetest, Avastage Kulinaarset Õndsust, Tehke Iga Suutäis Meeldejäävaks!</p>
+
+                    <a href="contact.html" class="btn-1 btn-red" style="margin-top: 24px;"
+                    >HELISTAGE KOHE</a>
+
+                    <a href="contact.html"
+                    class="btn-1 btn-red btn-transparent"
+                    style="margin-top: 14px;">
+                <span>Uued Pakkumised</span>
+                <i class="fa-solid fa-star fa-lg red"></i>
+                </a>
+                </div>
+
+                <div class="hero-img">
+                    <img src="img/hero-img.png" alt="hero page img">
+                </div>
+            </div>
+
+
+            <div class="features">
+                <div class="feature">
+                <div class="feature-title">
+                    <div class="circle" style="background-color: #e3292a;"></div>
+                    <h3>Erakordselt kvaliteetne maitse</h3>
+                </div>
+                <p>5 Tärni Hinnangud Google Mapsis</p>
+
+                <span>
+                    <h1>5</h1>
+                    <i class="fa-solid fa-star fa-2xl" style="color: #ffd43b;"></i>
+                </span>
+                </div>
+            
+
+            <div class="feature">
+                <div class="feature-title">
+                    <div class="circle" style="background-color: #e3292a;"></div>
+                    <h3>Kommuuni Lemmikud</h3>
+                </div>
+                <p>Üle 1000+ inimese lemmik pitsa Tartus</p>
+        
+                <span>
+                    <h1>1000+</h1>
+                    <i class="fa-solid fa-heart fa-2xl" style="color: #e3292a;"></i>
+                </span>
+                </div>
+                
+
+            <div class="feature">
+                <div class="feature-title">
+                    <div class="circle" style="background-color: #e3292a;"></div>
+                    <h3>Jätkusuutlik Tipptase</h3>
+                </div>
+                <p>kõik toitained on hangitud vastutustundlikult</p>
+            
+                <span>
+                    <h1>5</h1>
+                    <i class="fa-solid fa-recycle fa-2xl" style="color: #86e329;"></i>
+                </span>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="about-content">
+                <div class="about-headline">
+                    <h1 class="red">Kes Ma Olen & Mida Ma Teen</h1>
+                    <p>
+                        Tere tulemast Tartu Pitsasse, kus kirg toidu vastu kohtub pühendumusega luua erakordseid maitseelamusi. Tartu Pitsa usub erakordse maitse jõusse, mis loob püsivaid mälestusi.
+                    </p>
+                </div>
+
+                <div class="about-boxes">
+                    <div class="about-box" style="background-color: #ff5a00;">
+                    <i class="fa-solid fa-house fa-2xl" style="color: #ffffff;"></i>
+                    <div class="box-description">
+                        <h4>Külalislahke Ruum</h4>
+                        <span>
+                            Tartu Pitsa on rohkem kui lihtsalt restoran, see on kogukonna keskus. Pakume sõprade ja perede kogunemiseks sooja ja kutsuvat õhkkonda.
+                        </span>
+                    </div>
+                    </div>
+
+                    <div class="about-box" style="background-color: #5bcf00;">
+                    <i class="fa-solid fa-recycle fa-2xl" style="color: #ffffff;"></i>
+                    <div class="box-description">
+                        <h4>Jätkusuutlikkus südames</h4>
+                        <span>
+                            Tartu Pitsa on uhke, et integreerib jätkusuutlikkuse meie kulinaarsesse teekonda. Alates vastutustundlikult hangitud toorainetest kuni keskkonnasõbralike tavadeni.
+                        </span>
+                    </div>
+                    </div>
+
+                    <div class="about-box" style="background-color: #ff9900;">
+                    <i class="fa-solid fa-utensils fa-2xl" style="color: #ffffff;"></i>
+                    <div class="box-description">
+                        <h4>Koge Tartu Pitsat</h4>
+                        <span>
+                            Liitu meiega, et nautida maitsete rikkalikkust, kogukonna soojust ja jätkusuutliku toitlustamise rõõmu.
+                        </span>
+                    </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="about-img">
+                <img src="img/about-img.png" alt="veebilehe kohta">
+            </div>
+        </section>
+
+        <!-- callout / tähelepanu juhtimine sisule -->
+
+        <div class="callout">
+            <h1>Hellita oma meeli, ühenda end teistega ja lase Tartu Pitsal ennast üllatada</h1>
+            <p>Olenemata sellest, kas olete siin juhuslikuks söögiks, eriliseks pidustuseks või lihtsalt uute maitsete avastamiseks, Tartu Pitsa kutsub teid kulinaarsele teekonnale, mis ulatub kaugemale taldrikust</p>
+
+            <a href="contact.html" class="btn-1 btn-red" style="margin-top: 24px; background-color: white; color: black;">
+                HELISTAGE KOHE
+            </a>
+        </div>
+
+        <!-- Menüü sektsioon -->
+
+        <div class="menu">
+            <div class="menu-title">
+                <h1>VAADAKE MEIE MENÜÜD</h1>
+                <i class="fa-solid fa-pizza fa-2xl" style="color: #e3292a;"></i>
+            </div>
+            <div class="menu-items">
+                <div class="menu-column">
+                    <div class="menu-item Pepperoni-vn">
+                        <a href="menu.html#PVN">
+                            <div class="menu-item-title">
+                                <p>Pepperoni Pitsa Viineriga</p>
+                                <i class="fa.fa-solid fa-square-arrow-up-right fa-xl" style="color: #000000;"></i>
+
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="menu-item Margherita"></div>
+                        <a href="menu.html#MG">
+                            <div class="menu-item-title">
+                                <p>Margherita Pitsa</p>
+                                <i class="fa.fa-solid fa-square-arrow-up-right fa-xl" style="color: #000000;"></i>
+                                
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="menu-item BBQ"></div>
+                        <a href="menu.html#BQ">
+                            <div class="menu-item-title">
+                                <p>BBQ Chicken pitsa</p>
+                                <i class="fa.fa-solid fa-square-arrow-up-right fa-xl" style="color: #000000;"></i>
+                                
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="menu-item Supreme"></div>
+                        <a href="menu.html#SPM">
+                            <div class="menu-item-title">
+                                <p>Supreme pitsa</p>
+                                <i class="fa.fa-solid fa-square-arrow-up-right fa-xl" style="color: #000000;"></i>
+                                
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="menu-item Hawaiian"></div>
+                        <a href="menu.html#HW">
+                            <div class="menu-item-title">
+                                <p>hawaiian pitsa</p>
+                                <i class="fa.fa-solid fa-square-arrow-up-right fa-xl" style="color: #000000;"></i>
+                                
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
